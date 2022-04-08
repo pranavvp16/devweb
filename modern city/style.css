@@ -1,0 +1,153 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap%27');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: url(img.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-repeat: no-repeat;
+
+}
+.content h3{
+    letter-spacing:2px ;
+    padding-inline: 10px;
+    font-family:'Poppins', sans-serif ;
+}
+.navbar h1{
+    font-size: xx-large;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    padding-right: 1050px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    align-items: center;
+}
+button{
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 25px;
+    outline: none;
+    color: white;
+     border-radius:20px;;
+}
+.content{
+    position: absolute;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    left: 8%;
+    top: 50%;
+    transform:translateY(-50%);
+    z-index:2;
+}
+h1{
+    font-size: 80px;
+    line-height: 80px;
+    padding: 10px 0px 30px;
+}
+.sidebar{
+    top: 50%;
+    right: 20px;;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index:3;
+}
+.sidebar ul{
+    padding: initial;
+}
+.sidebar ul li{
+    height:40px;
+    width: 40px;
+    list-style: none;
+    margin-top: 5px;
+    color: aliceblue;
+    background:transparent;
+    font-size: 40px;
+    border-radius: 20px;
+    }
+.sidebar ul li :hover{
+    opacity: 1;
+    transform:translateY(-10px);
+    transform: translateX(-10px);
+    transition: 0.5s;
+}    
+div .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+}
+div .set div{
+    position: absolute;
+    display: block;
+    
+}
+div .set div:nth-child(1){
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+    }
+    div .set div:nth-child(2){
+        left: 50%;
+        animation: animate 20s linear infinite;
+        animation-delay: -5s;
+        }
+        div .set div:nth-child(3){
+            left: 70%;
+            animation: animate 20s linear infinite;
+            animation-delay: 0s;
+            }
+            div .set div:nth-child(4){
+                left: 90%;
+                animation: animate 15s linear infinite;
+                animation-delay: 2s;
+                }        
+               
+@keyframes animate{
+    0%{
+        opacity: 0;
+        top:-10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translate(-20px) rotate(225deg);
+    }
+}
+.set2{
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
+.set3{
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+}
